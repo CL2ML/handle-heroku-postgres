@@ -1,6 +1,14 @@
 # Collection of utility modules to handle a PostgreSQL database on heroku with Python
 
 
+
+## Components
+
+- Check database connection
+- Create table
+- Check tables
+- Check table columns
+
 ## General hints
 
 - The heroku Postgres database can be accessed externally by a specific URL provided by the service. The database credentials are changed by heroku from time to time. So, it is advisable to check the URL every time and then to put the it in an environment variable that will be used by the scripts. The databse credentials can be verified here: [data.heroku.com](https://data.heroku.com)
@@ -13,18 +21,12 @@
 ### Py Packages
 
 - psycopg2: PostgreSQL python handler
-- dotenv: Load environment variables
+- dotenv: Load environment variables from an .env file containing the database url (added to .gitignore)
 
 ### Custom methods
 
 - commands: Custom method containing the SQL commands that will be loaded into the scripts
 
-## Components
-
-- Check database connection
-- Create table
-- Check tables
-- Check table columns
 
 ## Sources & Credits
 
